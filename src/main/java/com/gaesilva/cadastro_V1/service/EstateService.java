@@ -29,11 +29,11 @@ public class EstateService {
 	}
 
 	public EstateDto buscaPorCnpj(String cnpj) {
-		log.info("[Inicia] EstateService - save");
+		log.info("[Inicia] EstateService - buscaPorCnpj");
 		//String bal = cnpj;
 		Estate imobialiara = this.estateRepository.findByCnpj(cnpj);
 		EstateDto dto = estateFactory.parse(imobialiara);
-		log.info("[Fim] EstateService - save");
+		log.info("[Fim] EstateService - buscaPorCnpj");
 		return dto;
 	}
 

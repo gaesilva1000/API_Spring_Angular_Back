@@ -6,6 +6,15 @@ public class EstateDto {
 	private String companyName;
 	private String cnpj;
 	private String telephone;
+	private String End;
+
+	public String getEnd() {
+		return End;
+	}
+
+	public void setEnd(String end) {
+		End = end;
+	}
 
 	public String getTradingName() {
 		return tradingName;
